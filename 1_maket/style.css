@@ -1,0 +1,435 @@
+body {
+    margin: 0 auto;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.main-header {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #445162;
+    color: white;
+}
+.main-header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear:both;
+}
+.header-wrapper {
+    float: left;
+}
+.main-header-photo {
+    display: block;
+    width: 469px;
+    height: 214px;
+    background-color: #ffffff;
+    float: right;
+}
+.header-title {
+    display: block;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+.main-header-list {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: none;
+}
+.main-header-list li {
+    margin: 0 0 10px 0;
+    position: relative;
+    padding-left: 30px;
+}
+.main-header-list li:nth-child(4) {
+    margin: 0;
+}
+.main-header-list li::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background-image: url('https://thecustomizewindows.com/wp-content/uploads/2011/09/CSS-Tick-Marks-and-Wrong-Marks-How-To-Add-In-Easy-Steps.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-main {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+.about-main::after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear:both;
+}
+.about-wrapper {
+    float: left;
+    width: 68%;
+}
+.about-title {
+    display: block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0 0 20px 0;
+}
+.about-text {
+    margin: 0 50px 0 0;
+}
+.about-text-par {
+    text-align: justify;
+    margin: 0 0 10px 0;
+}
+.about-header-photo {
+    display: block;
+    width: 280px;
+    height: 200px;
+    background-color: #fff;
+    float: right;
+}
+.dignity {
+  width: 100%;
+  padding: 50px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+.dignity:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.dignity-title {
+  display: block;
+  margin: 0 0 24px 0;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Arial";
+  color: rgb(68, 81, 97);
+  line-height: 1.2;
+}
+.dignity-list {
+  width: 540px;
+  margin: 0;
+  padding: 0 0 0 46px;
+  list-style-type: none;
+  float: left;
+}
+.dignity-list:nth-child(3){
+  float: right;
+}
+.dignity-list-item {
+  margin: 0 0 40px 0;
+  position: relative;
+}
+.dignity-list:nth-child(2) > .dignity-list-item:nth-child(3),
+.dignity-list:nth-child(3) > .dignity-list-item:nth-child(3) {
+  margin: 0;
+}
+.dignity-list-item:before {
+  content: "+";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #445161;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  line-height: 32px;
+  position: absolute;
+  top: 0;
+  left: -46px;
+}
+.screnshots {
+  width: 100%;
+  padding: 50px;
+  background-color: #fff;
+   box-sizing: border-box;
+  }
+.screnshots::after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+  }
+.screenshots-title {
+    display: block;
+    margin: 0 0 36px 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Arial";
+    color: rgb(68, 81, 97);
+    line-height: 1.2;
+  }
+.screenshots-item {
+    margin: auto;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+.screenshots-item-photo {
+    display: block;
+    margin: 0px 20px 40px 0px;
+    float: left;
+    width: 200px;
+    height: 150px;
+    background-color: darkblue;
+  }
+  .item-descrip-title {
+    display: block;
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    font-family: "Arial";
+    color: rgb(68, 81, 97);
+    line-height: 1.2;
+  }
+  .item-descrip {
+      margin: 0 40px 0 0;
+      text-align: justify;
+  }
+  .flexcontainer {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+  }
+  .reviews-header {
+    margin: 50px 0 35px 0;
+    width: 100%;
+    text-align: center;
+    color: #445161;
+    font-family: "Arial MT";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+  .reviews-area { 
+    display: flex;
+    width: 50%;
+    margin: 0px 0px 50px 0px;
+  }
+  .reviews-img {
+    margin: 20px 0px 21px 50px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .Avatar--picture__3t {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    object-position: center;
+  }
+  .reviews-text {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 50px;
+    padding: 15px 10px 0px 15px;
+    color: #333333;
+    font-family: "Arial";
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: #ebebeb;
+    text-align: left;
+  }
+  .reviews-author {
+    color: #989898;
+    font-family: "Arial";
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;   
+    line-height: 18px;
+    margin: 15px 0px 16px 0px;
+  }
+  .price-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 0 145px 50px 145px;
+  }
+.price-list-header {
+  width:100%;
+  color: #445161;
+  font-family: "Arial MT";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  margin: 50px 0 30px 0px;
+}
+.price-item {
+  background-color:#445162;
+  min-width: 10%;
+  margin: 10px;
+}
+.price-header {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Arial MT";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 20px 0 20px 0;
+}
+.price-list-cost {
+  color: #445162;
+  font-family: "Arial MT";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 30px;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  border-left: 2px solid #445162;
+  border-right: 2px solid #445162;
+}
+.price-cost-item {
+  list-style: inside;
+  list-style-type: decimal;
+  color: #ffffff;
+  font-family: "Arial MT";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 20px 40px 20px 0;
+}
+.price-list-btn {
+  box-sizing: border-box;
+  color: #445161;
+  font-family: "Arial - Bold MT";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 20px;
+  padding: 15px 0 15px 0;
+  border-radius: 3%/16%;
+}
+.price-list-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transition-duration: 0.35s;
+}
+.price-list-btn:active {
+  background-color: rgb(1, 77, 39);
+  color: #fff;
+  transition-duration: 0.15s;
+}
+footer {
+  background-color:#445162;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-header {
+  color: #ffffff;
+  font-family: "Arial MT";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  width: 100%;
+  text-align: center;
+  margin: 55px 0 35px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #445162;
+  font-family: "Arial MT";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+form textarea {
+  padding: 10px;
+  color: #445162;
+  font-family: "Arial MT";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+form > .price-list-btn {
+  width: 140px;
+  align-self: center;
+}
+.contacts {
+  color: #ffffff;
+  font-family: "Arial MT";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 50px;
+}
+.social {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+a.social-btn {
+  color: #445162;
+}
+.social-btn {
+  margin-right: 10px;
+  padding: 18px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+i.fa-fw {
+  width: 18px;
+  text-align: center;
+}
+i.fa-2x {
+  font-size: 24px;
+}
+i.fa {
+  display: inline;
+}
+.social-btn:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  transition-duration: 0.35s;
+}
+.social-btn:active {
+  background-color: rgb(1, 77, 39);
+  color: #fff;
+  border: 1px solid rgb(1, 77, 39);
+  transition-duration: 0.15s;
+}
