@@ -11,7 +11,7 @@ body {
 
 .header {
     position: relative;
-    background: url(img/photo-back.png) no-repeat;
+    background: url(../img/photo-back.png) no-repeat;
     background-size: cover;
 }
 
@@ -681,7 +681,7 @@ video {
     height: 21px;
     top: 5px;
     left: -40px;
-    background-image: url(img/01.svg);
+    background-image: url(../img/01.svg);
     background-size: cover;
     background-repeat: no-repeat;
     fill: #c7b299;
@@ -861,7 +861,7 @@ video {
 .post-link-txt:after {
     content: '';
     position: absolute;
-    background-image: url(./img/arrow.png);
+    background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
     top: 7px;
     bottom: 0px;
@@ -904,7 +904,7 @@ video {
 }
 
 .our-customers {
-    background: url(./img/photo-custom.png);
+    background: url(../img/photo-custom.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 140px 0 140px 0;
@@ -1006,7 +1006,7 @@ video {
 .prefoot-txt-link:after {
     content: '';
     position: absolute;
-    background-image: url(./img/arrow1.png);
+    background-image: url(../img/arrow1.png);
     background-repeat: no-repeat;
     top: 7px;
     bottom: 0px;
