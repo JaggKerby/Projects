@@ -429,6 +429,10 @@ font-family: 'PT Serif', serif; */
         width: 100%;
         padding-bottom: 50px;
     }
+    .footer__menu-list {
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 @media (max-width:992px) {
     .search__form {
@@ -458,11 +462,34 @@ font-family: 'PT Serif', serif; */
         top: 50%;
         transform: translateY(-50%);
     }
+    .popular__img {
+        width: 300px;
+        height: 300px;
+    }
     .best {
         min-height: 600px;
     }
     .reviews {
         padding: 0 15px 0 15px; 
+    }
+    .footer__form {
+        flex-direction: column;
+    }
+    .footer__form-label {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .footer__form-input {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+    .footer__top,
+    .about,
+    .reason,
+    .popular__inner {
+        padding: 50px;
     }
 }
 @media (max-width:768px) {
