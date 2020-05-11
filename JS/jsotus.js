@@ -165,7 +165,6 @@
 
 // // const index = arr.indexOf(elem);
 
-
 // // if (index >= 0 ) {
 // //   console.log(arr[index], index);
 // // } else {
@@ -185,3 +184,33 @@
 // const arr = [10, 20];
 // arr[4] = 4;  - вставляет элемент на 4 позицию массива, если элементов в массиве меньше то они заполнятся undefined. 
 // [10, 20, undefined, undefined, 4] */
+
+
+/* поиск максимальног и минимального значения в массиве */
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, -9, 10];
+// let max = getMaxValue(nums);
+// let min = getMinValue(nums);
+
+
+// function getMaxValue(nums){
+//     let max = nums[0]; 
+//     for (i=0; i < nums.length; i++) {
+//       if (max < nums[i]) {
+//         max = nums[i]; 
+//       }
+//     }
+//   return max;
+// };
+
+// function getMinValue(nums) {
+//   let min = nums[0];
+//   for (i = 0; i < nums.length; i++) {
+//     if ( min > nums[i]) {
+//       min = nums[i];
+//     }
+//   }
+//    return min;
+// }
+
+// console.log(max, min);
