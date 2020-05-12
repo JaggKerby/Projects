@@ -1,0 +1,268 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000;
+}
+
+.header__background {
+  background-image: url(../img/background-head.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-bottom: 135px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__inner {
+  padding: 30px 66px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo__link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+.logo__link:hover {
+  color: #ccc;
+}
+
+.logo__name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  padding-left: 15px;
+}
+
+.menu__list {
+  display: flex;
+  width: 345px;
+}
+
+.menu__list-item + .menu__list-item {
+  padding-left: 50px;
+}
+
+.menu__list-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  transition-duration: 0.3s;
+}
+.menu__list-link:hover {
+  color: #fff;
+}
+
+.menu__list-link--active {
+  color: #fff;
+}
+
+.slider {
+  padding: 140px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__header {
+  width: 570px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 60px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.slider__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 55px;
+  color: #fff;
+  padding-bottom: 60px;
+}
+
+.slider__btn {
+  padding: 13px 40px;
+  color: #250F8A;
+  border: none;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #FFCA00;
+  transition-duration: 0.3s;
+}
+.slider__btn:hover {
+  background-color: #4d26b8;
+  color: #FFCA00;
+}
+
+.ability {
+  text-align: center;
+}
+
+.ability__img {
+  position: relative;
+}
+.ability__img::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/styleleft.png);
+  background-repeat: no-repeat;
+  width: 511px;
+  height: 425px;
+  top: 70px;
+  left: 0;
+}
+
+.ability__title {
+  padding: 55px 0 96px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 45px;
+  color: #202020;
+}
+
+.ability__inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ability__item {
+  width: 280px;
+  padding-bottom: 95px;
+}
+
+.ability__item-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #202020;
+  padding: 23px 0 11px;
+}
+
+.ability__item-txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  color: #272727;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+.workflow__img {
+  position: relative;
+}
+.workflow__img::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/styleright.svg);
+  background-repeat: no-repeat;
+  width: 184px;
+  height: 425px;
+  right: 0;
+  bottom: 570px;
+}
+
+.workflow__inner {
+  padding: 96px 0 67px;
+}
+
+.devteam {
+  display: flex;
+  align-items: center;
+}
+
+.devteam__inner {
+  width: 455px;
+}
+
+.devteam__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 45px;
+  color: #202020;
+  padding: 0px 26px 15px 0px;
+}
+
+.devteam__txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  color: #272727;
+  text-align: justify;
+  padding-bottom: 30px;
+}
+
+.devteam__img {
+  width: 667px;
+  height: 517px;
+}
+
+.devteam__one {
+  padding-bottom: 76px;
+}
+
+.devteam__two {
+  padding-bottom: 24px;
+}
+
+.devteam__img-one {
+  padding-left: 49px;
+}
+
+.devteam__img-two {
+  padding-right: 61px;
+}
+
+.devteam__img-three {
+  padding-left: 30px;
+}
+
+.footer__background {
+  background-image: url(../img/footerback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.review__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  padding: 38px 0 48px;
+}

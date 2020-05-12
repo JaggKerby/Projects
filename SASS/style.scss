@@ -1,0 +1,21 @@
+$top-color: #454545;
+$top-font: 'Lato', sans-serif;
+
+
+.menu {
+    display: flex;
+    .menu__item {
+        margin: 10px;
+        text-align: center;
+    }
+    .menu__item-link {
+        text-decoration: none;
+    }
+} 
+.item-link {
+    color: #fff;
+    &:hover {
+        color: $top-color;
+        font-family: $top-font;
+    }
+}

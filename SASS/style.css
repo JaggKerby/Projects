@@ -1,0 +1,18 @@
+.menu {
+  display: flex;
+}
+.menu .menu__item {
+  margin: 10px;
+  text-align: center;
+}
+.menu .menu__item-link {
+  text-decoration: none;
+}
+
+.item-link {
+  color: #fff;
+}
+.item-link:hover {
+  color: #454545;
+  font-family: "Lato", sans-serif;
+}
