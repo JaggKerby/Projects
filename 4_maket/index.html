@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap&subset=cyrillic"
         rel="stylesheet">
     <title>MartaUP</title>
@@ -84,7 +85,7 @@
     <section class="workflow workflow__img">
         <div class="container workflow__inner">
             <section class="devteam devteam__one">
-                <div class="devteam__inner">
+                <div class="devteam__inner wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100">
                     <h3 class="devteam__title">Experienced Designers &
                         Developers
                     </h3>
@@ -97,11 +98,11 @@
                         tristique ullamcorper id vitae erat.
                     </p>
                 </div>
-                <img class="devteam__img devteam__img-one" src="img/devteam-icon.svg" alt="devteam">
+                <img class="devteam__img devteam__img-one wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100" src="img/devteam-icon.svg" alt="devteam">
             </section>
             <section class="devteam devteam__two">
-                <img class="devteam__img devteam__img-two" src="img/prototype-icon.png" alt="prototype">
-                <div class="devteam__inner">
+                <img class="devteam__img devteam__img-two wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100"src="img/prototype-icon.png" alt="prototype">
+                <div class="devteam__inner wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100">
                     <h3 class="devteam__title">Information Architect &
                         Visual Prototyping
                     </h3>
@@ -119,7 +120,7 @@
                 </div>
             </section>
             <section class="devteam devteam__three">
-                <div class="devteam__inner">
+                <div class="devteam__inner wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100">
                     <h3 class="devteam__title">Idea Generation &
                         Foundation
                     </h3>
@@ -130,7 +131,7 @@
                         erat a elementum rutrum, neque sem pretium metus,
                         quis mollis nisl nunc et massa</p>
                 </div>
-                <img class="devteam__img devteam__img-three" src="img/foundation.png" alt="foundation">
+                <img class="devteam__img devteam__img-three wow animate__fadeIn" data-wow-duration="2.2s" data-wow-offset="100" src="img/foundation.png" alt="foundation">
             </section>
         </div>
     </section>
@@ -138,51 +139,85 @@
     <footer class="footer footer__background">
         <div class="container">
 
-            <h2 class="review__title">
+            <h2 class="footer__title">
                 Don’t Just Take Our<br> Words
             </h2>
 
             <div class="review__items">
 
-                <div class="review__items-inner">
-                    <div class="review__item">
-                        <img class="review__item-img" src="img/user1.jpg" alt="customer">
-                        <h6 class="item__title">Arakat Bank</h6>
-                        <span class="item__title-txt">International Bank Ltd.</span>
+                <div class="review__item">
+                    <img class="review__item-img" src="img/user1.jpg" alt="user">
+                    <div class="review__item-title">
+                        <h6 class="review__head">Arakat Bank</h6>
+                        <p class="review__title-text">International Bank Ltd.</p>
                     </div>
-                    <p class="review__item-txt">Fusce vehicula dolor arcu, 
-                        sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, 
-                        vitae ullamcorper metus. 
-                        Sed sollicitudin ipsum.</p>
+                    <p class="review__item-txt">
+                        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                        Donec viverra eleifend lacus, vitae ullamcorper metus.
+                        Sed sollicitudin ipsum.
+                    </p>
                 </div>
 
-                <div class="review__items-inner">
-                    <div class="review__item">
-                        <img class="review__item-img" src="img/user2.jpg" alt="customer">
-                        <h6 class="item__title">Chrsitopher Company Ltd.</h6>
-                        <span class="item__title-txt">Design & Development</span>
+                <div class="review__item">
+                    <img class="review__item-img" src="img/user2.jpg" alt="user">
+                    <div class="review__item-title">
+                        <h6 class="review__head">Chrsitopher Company Ltd.</h6>
+                        <p class="review__title-text">Design & Development</p>
                     </div>
-                    <p class="review__item-txt">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. 
-                        Donec viverra eleifend lacus, vitae ullamcorper metus. 
-                        Sed sollicitudin ipsum.</p>
+                    <p class="review__item-txt">
+                        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                        Donec viverra eleifend lacus, vitae ullamcorper metus.
+                        Sed sollicitudin ipsum.
+                    </p>
                 </div>
 
-                <div class="review__items-inner">
-                    <div class="review__item">
-                        <img class="review__item-img" src="img/user3.jpg" alt="customer">
-                        <h6 class="item__title">Jigsawlab Studio Inc.</h6>
-                        <span class="item__title-txt">Interactive</span>
+                <div class="review__item">
+                    <img class="review__item-img" src="img/user3.jpg" alt="user">
+                    <div class="review__item-title">
+                        <h6 class="review__head">Jigsawlab Studio Inc.</h6>
+                        <p class="review__title-text">Interactive</p>
                     </div>
-                    <p class="review__item-txt">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. 
-                        Donec viverra eleifend lacus, vitae ullamcorper metus. 
-                        Sed sollicitudin ipsum.</p>
+                    <p class="review__item-txt">
+                        Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                        Donec viverra eleifend lacus, vitae ullamcorper metus.
+                        Sed sollicitudin ipsum.
+                    </p>
                 </div>
+
 
             </div>
 
         </div>
+        <div class="footer__bottom">
+            <div class="container">
+
+                <nav class="menu">
+                    <ul class="menu__list menu__footer-list">
+                        <li class="footer__list-item">
+                            <a class="menu__footer-link" href="#">About Martaup</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="menu__footer-link" href="#">Help</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="menu__footer-link" href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="copy">
+                    <p class="copy__txt">&copy;&nbsp;2013-2018 All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
     </footer>
 
 </body>
+<script src="js/wow.js"></script>
+<script src="js/main.js"></script>
+<script>
+    new WOW().init();
+</script>
 
 </html>
