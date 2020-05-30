@@ -209,13 +209,13 @@ li {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr;
     justify-content: start;
+    width: 355px;
 }
 
 .feature__icon {
     position: relative;
     grid-row: 1 /span 2;
     align-self: center;
-    padding-right: 20px;
     width: 75px;
     height: 75px;
     border: 1px solid #eeeeee;
@@ -223,9 +223,9 @@ li {
     border-radius: 50%;
 }
 
-.fa-tags {
+.fas {
     position: absolute;
-    top: 35%;
+    top: 33%;
     left: 35%;
     width: 27px;
     height: 22px;
