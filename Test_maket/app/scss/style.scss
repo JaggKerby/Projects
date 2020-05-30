@@ -194,8 +194,28 @@ li {
     line-height: 30px;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 42px;
+    row-gap: 58px;
+    padding: 120px 0px 120px 0px;
+}
+
+.feature__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    justify-content: start;
+}
+
 .feature__icon {
     position: relative;
+    grid-row: 1 /span 2;
+    align-self: center;
+    padding-right: 20px;
     width: 75px;
     height: 75px;
     border: 1px solid #eeeeee;
@@ -214,3 +234,32 @@ li {
     font-weight: 400;
     line-height: 24px;
 }
+
+.feature__title {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0px 0px 20px 20px; 
+    text-align: left;
+    color: #222222;
+    font-family: 'Dosis';
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.feature__txt {
+    position: absolute;
+    z-index: 3;
+    grid-column: 2;
+    grid-row: 2;
+    padding: 0px 0px 0px 20px;
+    text-align: justify;
+    background-color: #fff;
+}
+summary {
+    list-style: none;
+    border: none;
+    outline-style: none;
+    &::-webkit-details-marker {
+    display: none;
+    }
+} 
