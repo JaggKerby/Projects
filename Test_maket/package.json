@@ -10,7 +10,11 @@
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.5.1",
+    "magnific-popup": "^1.1.0",
+    "slick-carousel": "^1.8.1",
+    "vue-carousel-3d": "^0.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -4,6 +4,7 @@ let gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename');
+    // jquery = require('jquery');
 
 
 gulp.task('scss', function(){
@@ -35,6 +36,14 @@ gulp.task('js', function(){
     .pipe(browserSync.reload({stream: true}))
 });
 
+// gulp.task('jquery', function(){
+//     return gulp.src([
+//         'node_modules/jquery/dist/jquery.min.js'
+//     ])
+//     .pipe(gulp.dest('app/js'))
+//     .pipe(browserSync.reload({stream: true}))
+// });
+
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
@@ -46,8 +55,8 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', function(){
     gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
     gulp.watch('app/*.html', gulp.parallel('html'));
-    gulp.watch('app/js/*.js', gulp.parallel('js')); 
-    gulp.watch('app/js/*.js', gulp.parallel('script')); 
+    // gulp.watch('app/js/*.js', gulp.parallel('js')); 
+    // gulp.watch('app/js/*.js', gulp.parallel('script')); 
 }); 
 
 gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch'));
