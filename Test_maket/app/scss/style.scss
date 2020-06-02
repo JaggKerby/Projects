@@ -85,7 +85,7 @@ li {
 .header__background {
     padding: 30px 0 0 0;
     background: linear-gradient(to right, #fd712c 0%, #f21780 100%);
-    background-image: url(/img/iPhones.png), linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    background-image: url(../img/iPhones.png), linear-gradient(to right, #fd712c 0%, #f21780 100%);
     background-repeat: no-repeat;
     background-position: 113% 74%;
 }
@@ -99,9 +99,17 @@ li {
     color: #ffffff;
     font-family: 'Dosis';
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 24px;
     vertical-align: super;
+
+    &:hover {
+        color: #222222;
+    }
+}
+
+.logo__img {
+    vertical-align: text-top;
 }
 
 .header__menu {
@@ -116,6 +124,7 @@ li {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    padding: 0 0 150px 0;
 }
 
 .menu__item {
@@ -154,7 +163,7 @@ li {
     display: flex;
     flex-direction: column;
     width: 490px;
-    padding: 150px 0 219px 0;
+    padding: 0px 0 219px 0;
 }
 
 .apptemp__header {
@@ -189,7 +198,7 @@ li {
         left: -20px;
         width: 15px;
         height: 15px;
-        background-image: url(/img/check.png);
+        background-image: url(../img/check.png);
     }
 
     &.list__item:not(:last-child) {
@@ -237,7 +246,7 @@ li {
     border-radius: 50%;
 }
 
-.fas {
+.icon {
     position: absolute;
     top: 33%;
     left: 35%;
@@ -583,15 +592,10 @@ details[open] {
     margin: 0 auto;
 }
 
-.fa-windows {
-    filter: drop-shadow(0 0 0.75rem rgba(119, 119, 119, 0.1));
-    // border: 3px solid rgba(0, 0, 0, 0.1);
-}
-
 .dowload__img {
     background-color: #f7fafc;
     margin: 0 20px 0 0;
-    min-width: 115px;  
+    min-width: 115px;
 }
 
 .download__inner {
@@ -605,7 +609,7 @@ details[open] {
     display: flex;
     flex-direction: row;
     background-color: #ffffff;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
     border-radius: 3px;
     width: 360px;
 }
@@ -614,7 +618,7 @@ details[open] {
     padding: 25px 0px 28px 0px;
 }
 
-.list__link {   
+.list__link {
     display: inline-block;
     font-family: 'Dosis';
     font-size: 30px;
@@ -623,7 +627,45 @@ details[open] {
     color: #000;
     padding: 0px 0 14px;
 }
+
 .download__list-item {
     font-size: 14px;
     color: #777777;
+}
+
+.footer {
+    background-color: #222222;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 58px;
+}
+
+.footer__list {
+    align-self: center;
+    display: flex;
+    padding: 0 0 30px 0;
+}
+
+.footer__list-item:not(:first-child) {
+    margin: 0 0 0 30px;
+}
+
+.footer__txt {
+    align-self: center;
+}
+
+.link__item,
+.txt__link {
+    color: #ffffff;
+
+    &:hover {
+        color: #f31f79;
+    }
+}
+
+.footer__txt {
+    color: #fff;
 }

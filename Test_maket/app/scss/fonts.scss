@@ -31,6 +31,15 @@
 }
 
 @font-face {
+    font-family: 'Dosis';
+    src: url('../fonts/Dosis-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Dosis-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+@font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
         url('../fonts/Roboto-Medium.woff') format('woff');
