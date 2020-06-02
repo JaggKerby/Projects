@@ -1,21 +1,21 @@
 // Наблюдатель, который будет следить за изменением атрибута open
 const observer = new MutationObserver(function (mutations) {
   mutations.forEach(function (mutation) {
-      // Елемент у которого измелился атрибут
-      const details = mutation.target
-      // Если елемент был закрыт — ничего не делаем
-      if (!details.open) {
-          return
+    // Елемент у которого измелился атрибут
+    const details = mutation.target
+    // Если елемент был закрыт — ничего не делаем
+    if (!details.open) {
+      return
+    }
+    // Иначе, находим все открытые елементы details и перебираем их
+    document.querySelectorAll('div details[open]').forEach(el => {
+      // Исключаем из перебора елемент который мы только что открыли
+      if (el === details) {
+        return
       }
-      // Иначе, находим все открытые елементы details и перебираем их
-      document.querySelectorAll('div details[open]').forEach(el => {
-          // Исключаем из перебора елемент который мы только что открыли
-          if (el === details) {
-              return
-          }
-          // Закрываем все остальные елемент details
-          el.open = false
-      })
+      // Закрываем все остальные елемент details
+      el.open = false
+    })
   });
 });
 // Наблюдаем за изменением только одного атрибута
@@ -27,34 +27,33 @@ document.querySelectorAll('div details').forEach(el => observer.observe(el, conf
 
 // Слайдер скриншотов программ. 
 
-$(function(){
-$('.slider').slick({
-  nextArrow:'<button class="slick-arrow slick-prev"><img src="img/prev.svg" alt="prev arrow"></button>',
-  prevArrow:'<button class="slick-arrow slick-next"><img src="img/next.svg" alt="next arrow"></button>',
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
+$(function () {
+  $('.slider').slick({
+    nextArrow: '<button class="slick-arrow slick-prev"><img src="img/prev.svg" alt="prev arrow"></button>',
+    prevArrow: '<button class="slick-arrow slick-next"><img src="img/next.svg" alt="next arrow"></button>',
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '400px',
+          slidesToShow: 1
+        }
       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '400px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+    ]
+  });
 });
 
 // new Vue({
@@ -114,3 +113,36 @@ $('.slider').slick({
 //         // button.className = "";
 //     }
 // } 
+$(function () {
+  $('.feedback__slider').slick({
+    prevArrow: '<button class="feedback__btn arrow-prev"><i class="fas fa-long-arrow-alt-left"></i></button>',
+    nextArrow: '<button class="feedback__btn arrow-next"><i class="fas fa-long-arrow-alt-right"></i></button>',
+    infinite: true,
+    // slidesToShow: 3,
+    // slidesToScroll: 1
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
+

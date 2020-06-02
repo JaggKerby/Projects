@@ -546,6 +546,7 @@ details[open] {
 .feedback__item {
     max-width: 360px;
     background-color: #f7fafc;
+    margin: 0 5px 0;
 }
 
 .feedback__item-txt {
@@ -592,20 +593,7 @@ details[open] {
     margin: 0 auto;
 }
 
-.dowload__img {
-    background-color: #f7fafc;
-    margin: 0 20px 0 0;
-    min-width: 115px;
-}
-
-.download__inner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 80px 0 120px 0px;
-}
-
-.dowload__app {
+.download__app {
     display: flex;
     flex-direction: row;
     background-color: #ffffff;
@@ -613,6 +601,34 @@ details[open] {
     border-radius: 3px;
     width: 360px;
 }
+
+.download__img {
+    background-color: #f7fafc;
+    margin: 0 20px 0 0;
+    min-width: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__img {
+    width: 43px;
+    height: 62px;
+    fill: #777;
+
+    &:hover {
+        fill: url(#linear-gradient);
+    }
+}
+
+.download__inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 0 120px 0px;
+}
+
 
 .download__list {
     padding: 25px 0px 28px 0px;
@@ -632,6 +648,15 @@ details[open] {
     font-size: 14px;
     color: #777777;
 }
+
+.download__app:hover .app__img {
+    fill: url(#linear-gradient);
+}
+
+.download__app:hover .list__link {
+    color: #f31f79;
+}
+
 
 .footer {
     background-color: #222222;
@@ -668,4 +693,60 @@ details[open] {
 
 .footer__txt {
     color: #fff;
+}
+
+.slick-center {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background-color: #fff;
+    margin: 0px 20px 10px;
+}
+
+.feedback__btn {
+    @include button-reset;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    &:hover {
+        @include hover-effects;
+    }
+}
+.arrow-prev {
+    border: 1px solid #eeeeee;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 36%;
+    right: 100%;
+    z-index: 5;
+    cursor: pointer;
+    transform: translateY(-50%);
+    color: black;
+}
+.arrow-next {
+    border: 1px solid #eeeeee;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 36%;
+    left: 100%;
+    z-index: 5;
+    cursor: pointer;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.slick-list {
+    max-width: 1080px;
+    max-height: 300px;
+    margin: 0 105px;
+    padding: 0;
+}
+.draggable {
+    margin: 0 85px;
+    padding: 0;
+}
+.slick-slider {
+    max-width: 1080px;
 }
