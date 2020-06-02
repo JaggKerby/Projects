@@ -69,13 +69,15 @@ body {
 }
 
 a,
+ul,
 li {
     text-decoration: none;
     list-style: none;
+    padding: 0;
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -337,6 +339,7 @@ details[open] {
     background-color: #f7fafc;
     padding: 120px 0 0 100px;
 }
+
 .slider-screen__title {
     @include title;
     text-align: center;
@@ -347,6 +350,7 @@ details[open] {
     line-height: 30px;
     padding: 0 0 30px 0;
 }
+
 .slider-screen__txt {
     @include title-txt;
     padding: 0 0 80px 0;
@@ -568,6 +572,7 @@ details[open] {
 .download {
     background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
 }
+
 .download__title {
     @include title;
     color: #ffffff;
@@ -576,4 +581,49 @@ details[open] {
     margin: 0 auto;
     width: 658px;
     margin: 0 auto;
+}
+
+.fa-windows {
+    filter: drop-shadow(0 0 0.75rem rgba(119, 119, 119, 0.1));
+    // border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.dowload__img {
+    background-color: #f7fafc;
+    margin: 0 20px 0 0;
+    min-width: 115px;  
+}
+
+.download__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px 0 120px 0px;
+}
+
+.dowload__app {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+    border-radius: 3px;
+    width: 360px;
+}
+
+.download__list {
+    padding: 25px 0px 28px 0px;
+}
+
+.list__link {   
+    display: inline-block;
+    font-family: 'Dosis';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #000;
+    padding: 0px 0 14px;
+}
+.download__list-item {
+    font-size: 14px;
+    color: #777777;
 }
