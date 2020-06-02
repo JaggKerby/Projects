@@ -230,13 +230,80 @@
 
 
 
-    
+
 
 
 
     <section class="price">
 
         <div class="container">
+            <h2 class="price__title">We've got the perfect package for you</h2>
+            <p class="price__txt">Everyone’s reasons for learning user interface design are different. If you’re already
+                a developer, or a PM, or a <wbr>UX designer, why develop this totally separate skill?</p>
+                <div class="price__wrapper">
+                    <div class="price__item">
+                        <div class="price__inner">
+                            <h6 class="price__item-title">Basic</h6>
+                            <div class="price__cost"><span class="sup">$</span>12.0<span class="small">/m</div>
+                            <ul class="price__benefits">
+                                <li class="benefits__item">One User</li>
+                                <li class="benefits__item">Multiple Access</li>
+                                <li class="benefits__item">SMS Support</li>
+                                <li class="benefits__item">24/7 Online Support</li>
+                            </ul>
+                            <p class="price__item-txt">Start Free Trial</p>
+                            <button class="price__btn">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="price__item">
+                        <div class="price__inner">
+                            <h6 class="price__item-title">Standart</h6>
+                            <div class="price__cost"><span class="sup">$</span>24.0<span class="small">/m</div>
+                            <ul class="price__benefits">
+                                <li class="benefits__item">Five User</li>
+                                <li class="benefits__item">Multiple Access</li>
+                                <li class="benefits__item">SMS Support</li>
+                                <li class="benefits__item">24/7 Online Support</li>
+                            </ul>
+                            <p class="price__item-txt">Start Free Trial</p>
+                            <button class="price__btn">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="price__item">
+                        <div class="price__inner">
+                            <h6 class="price__item-title">Premium</h6>
+                            <div class="price__cost"><span class="sup">$</span>250.0<span class="small">/m</div>
+                            <ul class="price__benefits">
+                                <li class="benefits__item">Twenty User</li>
+                                <li class="benefits__item">Multiple Access</li>
+                                <li class="benefits__item">SMS Support</li>
+                                <li class="benefits__item">24/7 Online Support</li>
+                            </ul>
+                            <p class="price__item-txt">Start Free Trial</p>
+                            <button class="price__btn">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="price__item">
+                        <div class="price__inner">
+                            <h6 class="price__item-title">Enterprise</h6>
+                            <div class="price__cost"><span class="sup">$</span>999.0<span class="small">/m</div>
+                            <ul class="price__benefits">
+                                <li class="benefits__item">Unlimited User</li>
+                                <li class="benefits__item">Multiple Access</li>
+                                <li class="benefits__item">SMS Support</li>
+                                <li class="benefits__item">24/7 Online Support</li>
+                            </ul>
+                            <p class="price__item-txt">Start Free Trial</p>
+                            <button class="price__btn">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
             <h2 class="price__ttile"></h2>
             <p class="price__txt"></p>
             <div class="price__inner">
@@ -257,32 +324,118 @@
 
     </section>
 
+    <section class="videowall">
+        <video id="videoPlayer" src="data/video.mp4" width="1920" height="400" poster="img/Bitmap.jpg" muted='0' ;>
+            Sorry, your browser doesn't support embedded videos,
+            but don't worry, you can <a href="https://www.youtube.com/watch?v=Scxs7L0vhZ4">download it</a>
+            and watch it with your favorite video player!
+        </video>
+        <div class="videowall__container">
+            <button class='videowall__btn' id='playbutton'></button>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="container">
+            <h2 class="feedback__title">What our customers are saying</h2>
+            <p class="feedback__txt">Everyone’s reasons for learning user 
+                interface design are different. If you’re already a developer, 
+                or a PM, or a UX designer, 
+                why develop this totally separate skill?</p>
 
+            <div class="feedback__slider">
 
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">The JustLanded for WordPress 
+                        theme is great, super easy to use and to customize 
+                        and the support 
+                        is just awesome: super fast and reliable.</p>
 
+                    <div class="feedback__inner">
+                        <img class="feedback__img" src="img/people1.jpg" alt="people">
+                        <ul class="feedback__people">
+                            <li class="feedback__name">Alexandra Bullock</li>
+                            <li class="feedback__from">Apple Inc.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are.</p>
 
+                    <div class="feedback__inner">
+                        <img class="feedback__img" src="img/people2.jpg" alt="people">
+                        <ul class="feedback__people">
+                            <li class="feedback__name">Gary Sebastian</li>
+                            <li class="feedback__from">Apple Inc.</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="feedback__item">
+                    <p class="feedback__item-txt">Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
 
-
-
-
-
-    <section>
-        <div id="example">
-            <carousel-3d :perspective="0" :space="400" :display="3" :controls-visible="true"
-                :controls-prev-url="'https://w7.pngwing.com/pngs/475/618/png-transparent-arrow-computer-icons-bar-chart-arrow-angle-chevron-svg-filter-effects.png'"
-                :controls-next-html="'&#10093;'" :controls-width="30" :controls-height="60" :clickable="false">
-                <slide v-for="(slide, i) in slides" :index="i">
-                    <span class="title">You know</span>
-                    <p>You know, being a test pilot isn't always the healthiest business in the world.</p>
-                </slide>
-            </carousel-3d>
+                    <div class="feedback__inner">
+                        <img class="feedback__img" src="img/people3.jpg" alt="people">
+                        <ul class="feedback__people">
+                            <li class="feedback__name">Samantha Bilbau</li>
+                            <li class="feedback__from">Apple Inc.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
         </div>
 
     </section>
 
+    <section class="download">
 
+        <div class="container">
 
+            <h3 class="download__title">Download Giant App Now</h3>
+
+            <div class="download__inner">
+
+                <div class="dowload__app">
+                    <div class="download__img">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <ul class="download__list">
+                        <li class="download__list-item">
+                            <a class="list__link" href="#">Download</a>
+                        </li>
+                        <li class="download__list-item">Download from app store</li>
+                    </ul>
+                </div>
+
+                <div class="dowload__app">
+                    <div class="download__img">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <ul class="download__list">
+                        <li class="download__list-item">
+                            <a class="list__link" href="#">Download</a>
+                        </li>
+                        <li class="download__list-item">Download from app store</li>
+                    </ul>
+                </div>
+
+                <div class="dowload__app">
+                    <div class="download__img">
+                        <i class="fab fa-windows"></i>
+                    </div>
+                    <ul class="download__list">
+                        <li class="download__list-item">
+                            <a class="list__link" href="#">Download</a>
+                        </li>
+                        <li class="download__list-item">Download from app store</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
 
 
 
