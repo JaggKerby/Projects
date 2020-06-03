@@ -3,7 +3,6 @@
 @import 'fonts';
 @import 'mixins';
 
-
 html {
     box-sizing: border-box;
 }
@@ -497,8 +496,9 @@ details[open] {
 
 .feedback__item {
     max-width: 360px;
+    height: auto;
     background-color: #f7fafc;
-    margin: 0 5px 60px;
+    margin: 30px
 }
 
 .feedback__item-txt {
@@ -508,7 +508,7 @@ details[open] {
 .feedback__inner {
     display: flex;
     flex-direction: row;
-    padding: 0 0 40px 40px;
+    padding: 0 0px 40px 20px
 }
 
 .feedback__img {
