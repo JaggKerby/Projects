@@ -24,7 +24,6 @@
     &:hover {
         background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
         background-clip: padding-box;
-        transition-duration: 0.3s;
     }
 }
 
@@ -42,14 +41,14 @@
     font-size: 36px;
     font-weight: 600;
     line-height: 30px;
-    padding: 120px 0 0 0;
+    padding: 120px 0 23px 0;
 }
 
 @mixin title-txt {
     text-align: center;
     width: 658px;
     margin: 0 auto;
-    padding: 23px 0 80px 0;
+    padding: 0 0 80px 0;
 }
 
 html {
@@ -334,37 +333,37 @@ details[open] {
     }
 }
 
-.carousel-3d-container {
-    .carousel-3d-slide {
-        padding: 20px;
-
-        .title {
-            font-size: 22px;
-        }
-    }
-}
-
 .slider-screen {
     background-color: #f7fafc;
-    padding: 120px 0 0 100px;
 }
 
 .slider-screen__title {
     @include title;
-    text-align: center;
-    color: #222222;
-    font-family: 'Dosis';
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 30px;
-    padding: 0 0 30px 0;
+    padding-bottom: 30px;
 }
 
 .slider-screen__txt {
     @include title-txt;
-    padding: 0 0 80px 0;
+}
+.slider__img {
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
 }
 
+#next {
+    top: 45%;
+    left: 90%;
+}
+#prev {
+    top: 45%;
+    right: 90%;
+}
+#screen__hidden {
+    display: none;
+}
+.hidden__img {
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
 //стили блока цен //
 .price__title {
     @include title;
@@ -546,7 +545,7 @@ details[open] {
 .feedback__item {
     max-width: 360px;
     background-color: #f7fafc;
-    margin: 0 5px 0;
+    margin: 0 5px 60px;
 }
 
 .feedback__item-txt {
@@ -680,6 +679,7 @@ details[open] {
 
 .footer__txt {
     align-self: center;
+    text-align: center;
 }
 
 .link__item,
@@ -703,6 +703,7 @@ details[open] {
 
 .feedback__btn {
     @include button-reset;
+    border: 1px solid #eeeeee;
     position: relative;
     width: 40px;
     height: 40px;
@@ -710,7 +711,17 @@ details[open] {
     color: #ffffff;
     &:hover {
         @include hover-effects;
+        border: 3px solid rgba(0, 0, 0, 0.1);
     }
+}
+
+
+//slick style
+
+.slick-center {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transform: scale(1.2)
 }
 .arrow-prev {
     border: 1px solid #eeeeee;
@@ -718,7 +729,7 @@ details[open] {
     background-color: transparent;
     position: absolute;
     top: 36%;
-    right: 100%;
+    right: 105%;
     z-index: 5;
     cursor: pointer;
     transform: translateY(-50%);
@@ -730,23 +741,28 @@ details[open] {
     background-color: transparent;
     position: absolute;
     top: 36%;
-    left: 100%;
+    left: 105%;
     z-index: 5;
     cursor: pointer;
     transform: translateY(-50%);
     color: black;
 }
 
-.slick-list {
-    max-width: 1080px;
-    max-height: 300px;
-    margin: 0 105px;
-    padding: 0;
+ 
+// scrennshots style 
+.wrapper__slider {
+    padding: 0 0 80px 0;
+    position: relative;
 }
-.draggable {
-    margin: 0 85px;
-    padding: 0;
-}
-.slick-slider {
-    max-width: 1080px;
-}
+#carousel {
+    height: 500px;
+  }
+  #carousel img {
+    display: hidden; /* hide images until carousel prepares them */
+    cursor: pointer; /* not needed if you wrap carousel items in links */
+  }
+
+
+
+
+  

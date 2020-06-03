@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link href="css/all.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/media.min.css">
     <title>Giant</title>
 </head>
 
 <body>
-
     <header class="header header__background">
         <div class="container">
             <div class="header__inner">
                 <div class="logo">
                     <a class="logo__title" href="#">
-                        <img class="logo__img" src="img/Logo.svg" alt="Logo"><span class="t">Giant</span></a>
+                        <img class="logo__img" src="img/Logo.svg" alt="Logo"><span class="t">Giant</span>
+                    </a>
                 </div>
-
                 <nav class="menu">
                     <ul class="header__menu">
                         <li class="menu__item">
@@ -37,7 +37,7 @@
                 </nav>
             </div>
             <section class="apptemp">
-                <h1 class="apptemp__header">A&nbsp;Powerful &amp;&nbsp;Unique
+                <h1 class="apptemp__header">A&nbsp;Powerful &amp;&nbsp;Unique 
                     App Landing Template</h1>
                 <p class="apptemp__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -50,15 +50,9 @@
             </section>
         </div>
     </header>
-
     <section class="features">
         <div class="container">
             <div class="wrapper">
-
-
-
-
-
                 <div class="feature__item">
                     <div class="feature__icon">
                         <span class="icon fas fa-tags"></span>
@@ -184,31 +178,31 @@
             </div>
         </div>
     </section>
-
-
     <section class="slider-screen">
-
         <div class="container">
-
             <h3 class="slider-screen__title">Take a look at our screenshots</h3>
             <p class="slider-screen__txt">Everyone’s reasons for learning user interface design are different. If you’re
                 already a developer, or a PM, or a <wbr>UX designer, why develop this totally separate skill?</p>
-
-                <div class="slider">
-
-                    <div class="slider__item"><img class="slider__img" src="img/screen1.png" alt="screen"></div>
-                    <div class="slider__item"><img class="slider__img" src="img/screen1.png" alt="screen"></div>
-                    <div class="slider__item"><img class="slider__img" src="img/screen1.png" alt="screen"></div>
-                    <div class="slider__item"><img class="slider__img" src="img/screen1.png" alt="screen"></div>
-                    <div class="slider__item"><img class="slider__img" src="img/screen1.png" alt="screen"></div>
-                    <div class="slider__item"><img class="slider__img" src="img/screen1.png" alt="screen"></div>
-
+                <div class="wrapper__slider">
+                    <button class="feedback__btn arrow-prev" id="prev"><i class="fas fa-long-arrow-alt-left"></i></button>
+                    <div id="carousel">
+                        <img class="slider__img" src="img/screen1.png" alt="screen">
+                        <img class="slider__img" src="img/screen1.png" alt="screen">
+                        <img class="slider__img" src="img/screen1.png" alt="screen">
+                        <img class="slider__img" src="img/screen1.png" alt="screen">
+                        <img class="slider__img" src="img/screen1.png" alt="screen">
+                        <img class="slider__img" src="img/screen1.png" alt="screen">
+                        <img class="slider__img" src="img/screen1.png" alt="screen">
+                    </div>
+                    <button class="feedback__btn arrow-next" id="next"><i class="fas fa-long-arrow-alt-right"></i></button>
+                </div> 
+                <div id="screen__hidden">
+                    <img class="hidden__img" src="img/screen1.png" alt="screen">
+                    <img class="hidden__img" src="img/screen1.png" alt="screen">
+                    <img class="hidden__img" src="img/screen1.png" alt="screen">
                 </div>
         </div>
-
     </section>
-
-
     <section class="price">
         <div class="container">
             <h2 class="price__title">We've got the perfect package for you</h2>
@@ -270,9 +264,8 @@
                             <p class="price__item-txt">Start Free Trial</p>
                             <button class="price__btn">Buy Now</button>
                         </div>
-                    </div>
+                    </div> 
     </section>
-
     <section class="videowall">
         <video id="videoPlayer" src="data/video.mp4" width="1920" height="400" poster="img/Bitmap.jpg" muted='0' ;>
             Sorry, your browser doesn't support embedded videos,
@@ -289,104 +282,90 @@
             <p class="feedback__txt">Everyone’s reasons for learning user
                 interface design are different. If you’re already a developer,
                 or a PM, or a UX designer,
-                why develop this totally separate skill?</p>
-<button class="feedback__btn arrow-prev"><i class="fas fa-long-arrow-alt-left"></i></button>
-
+                why develop this totally separate skill?
+            </p>
             <div class="feedback__slider">
                 <div class="feedback__item">
-                    <p class="feedback__item-txt">The JustLanded for WordPress
+                    <p class="feedback__item-txt">
+                        The JustLanded for WordPress
                         theme is great, super easy to use and to customize
                         and the support
-                        is just awesome: super fast and reliable.</p>
-
+                        is just awesome: super fast and reliable.
+                    </p>
                     <div class="feedback__inner">
                         <img class="feedback__img" src="img/people1.jpg" alt="people">
                         <ul class="feedback__people">
-                            <li class="feedback__name">Alexandra Bullock</li>
-                            <li class="feedback__from">Apple Inc.</li>
+                            <li class="feedback__name">
+                                Alexandra Bullock
+                            </li>
+                            <li class="feedback__from">
+                                Apple Inc.
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="feedback__item">
-                    <p class="feedback__item-txt">Very happy with the theme and incredibly easy to configure, well done!
-                        I cannot emphasize how awesome this theme and developer support are.</p>
-
+                    <p class="feedback__item-txt">
+                        Very happy with the theme and incredibly easy to configure, well done!
+                        I cannot emphasize how awesome this theme and developer support are.
+                    </p>
                     <div class="feedback__inner">
                         <img class="feedback__img" src="img/people2.jpg" alt="people">
                         <ul class="feedback__people">
-                            <li class="feedback__name">Gary Sebastian</li>
-                            <li class="feedback__from">Apple Inc.</li>
+                            <li class="feedback__name">
+                                Gary Sebastian
+                            </li>
+                            <li class="feedback__from">
+                                Apple Inc.
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="feedback__item">
-                    <p class="feedback__item-txt">Definitely a great theme and the support team are fantastic. Customer
-                        support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
-
+                    <p class="feedback__item-txt">
+                        Definitely a great theme and the support team are fantastic. Customer
+                        support is numero uno and ShapingRain have got this spot on. Cheers guys.
+                    </p>
                     <div class="feedback__inner">
                         <img class="feedback__img" src="img/people3.jpg" alt="people">
                         <ul class="feedback__people">
-                            <li class="feedback__name">Samantha Bilbau</li>
-                            <li class="feedback__from">Apple Inc.</li>
+                            <li class="feedback__name">
+                                Samantha Bilbau
+                            </li>
+                            <li class="feedback__from">
+                                Apple Inc.
+                            </li>
                         </ul>
                     </div>
                 </div>
-
                 <div class="feedback__item">
-                    <p class="feedback__item-txt">Definitely a great theme and the support team are fantastic. Customer
-                        support is numero uno and ShapingRain have got this spot on. Cheers guys.</p>
-
+                    <p class="feedback__item-txt">
+                        Definitely a great theme and the support team are fantastic. Customer
+                        support is numero uno and ShapingRain have got this spot on. Cheers guys.
+                    </p>
                     <div class="feedback__inner">
                         <img class="feedback__img" src="img/people3.jpg" alt="people">
                         <ul class="feedback__people">
-                            <li class="feedback__name">Samantha Bilbau</li>
-                            <li class="feedback__from">Apple Inc.</li>
+                            <li class="feedback__name">
+                                Samantha Bilbau
+                            </li>
+                            <li class="feedback__from">
+                                Apple Inc.
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="feedback__item">
-                    <p class="feedback__item-txt">The JustLanded for WordPress
-                        theme is great, super easy to use and to customize
-                        and the support
-                        is just awesome: super fast and reliable.</p>
-
-                    <div class="feedback__inner">
-                        <img class="feedback__img" src="img/people1.jpg" alt="people">
-                        <ul class="feedback__people">
-                            <li class="feedback__name">Alexandra Bullock</li>
-                            <li class="feedback__from">Apple Inc.</li>
-                        </ul>
-                    </div>
-                </div> -->
-                <!-- <div class="feedback__item">
-                    <p class="feedback__item-txt">The JustLanded for WordPress
-                        theme is great, super easy to use and to customize
-                        and the support
-                        is just awesome: super fast and reliable.</p>
-
-                    <div class="feedback__inner">
-                        <img class="feedback__img" src="img/people1.jpg" alt="people">
-                        <ul class="feedback__people">
-                            <li class="feedback__name">Alexandra Bullock</li>
-                            <li class="feedback__from">Apple Inc.</li>
-                        </ul>
-                    </div> -->
-                <!-- <button class="feedback__btn arrow-prev"><i class="fas fa-long-arrow-alt-left"></i></button> -->
-
             </div>
         </div>
-
     </section>
-
     <section class="download">
         <div class="container">
             <h3 class="download__title">Download Giant App Now</h3>
             <div class="download__inner">
                 <div class="download__app">
                     <div class="download__img">
-                        <svg class="app__img" stroke="rgba(0, 0, 0, 0.2)"
-                        stroke-width="40" xmlns="http://www.w3.org/2000/svg" width="20" height="25"
-                            viewBox="0 0 496.255 608.728">
+                        <svg class="app__img" stroke="rgba(0, 0, 0, 0.2)" stroke-width="40"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 496.255 608.728">
                             <linearGradient id="linear-gradient">
                                 <stop offset="0%" stop-color=#fd712c />
                                 <stop offset="100%" stop-color=#f21780 />
@@ -402,13 +381,10 @@
                         <li class="download__list-item">Download from app store</li>
                     </ul>
                 </div>
-
-
                 <div class="download__app">
                     <div class="download__img">
-                        <svg class="app__img" stroke="rgba(0, 0, 0, 0.1)"
-                        stroke-width="3" height="25" viewBox="2.993 .918 26.014 30.687" width="25"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg class="app__img" stroke="rgba(0, 0, 0, 0.1)" stroke-width="3" height="25"
+                            viewBox="2.993 .918 26.014 30.687" width="25" xmlns="http://www.w3.org/2000/svg">
                             <linearGradient id="linear-gradient">
                                 <stop offset="0%" stop-color=#fd712c />
                                 <stop offset="100%" stop-color=#f21780 />
@@ -424,13 +400,10 @@
                         <li class="download__list-item">Download from play store</li>
                     </ul>
                 </div>
-
-
                 <div class="download__app">
                     <div class="download__img">
-                        <svg class="app__img" stroke="rgba(0, 0, 0, 0.2)"
-                        stroke-width="35" width="24" height="25" viewBox="0 0 256 257"
-                            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+                        <svg class="app__img" stroke="rgba(0, 0, 0, 0.2)" stroke-width="35" width="24" height="25"
+                            viewBox="0 0 256 257" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
                             <linearGradient id="linear-gradient">
                                 <stop offset="0%" stop-color=#fd712c />
                                 <stop offset="100%" stop-color=#f21780 />
@@ -457,22 +430,16 @@
                 <li class="footer__list-item"><a class="link__item fas fa-basketball-ball" href="#"></a></li>
                 <li class="footer__list-item"><a class="link__item fab fa-behance" href="#"></a></li>
             </ul>
-
             <p class="footer__txt">Copyright &copy;&nbsp;2017 | UXSEVEN&nbsp;&mdash;
                 a&nbsp;sister concern of&nbsp;
                 <a class="txt__link" href="#">codepixar.com</a>
             </p>
-
         </div>
-
     </footer>
-
-
-
     <script src="js/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/slick.min.js"></script> 
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
 </body>
 
 </html>

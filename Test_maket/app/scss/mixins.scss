@@ -1,0 +1,49 @@
+@mixin button-reset {
+    outline: none;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@mixin font-standart {
+    font-family: 'Roboto';
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #777777;
+}
+
+@mixin hover-effects {
+    &:hover {
+        background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+        background-clip: padding-box;
+    }
+}
+
+@mixin active-effects {
+    &:active {
+        transform: translateY(1px);
+        filter: saturate(150%);
+    }
+}
+
+@mixin title {
+    text-align: center;
+    color: #222222;
+    font-family: 'Dosis';
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 120px 0 23px 0;
+}
+
+@mixin title-txt {
+    text-align: center;
+    width: 658px;
+    margin: 0 auto;
+    padding: 0 0 80px 0;
+}
