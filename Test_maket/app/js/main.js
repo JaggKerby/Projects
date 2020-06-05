@@ -85,9 +85,17 @@ $(document).ready(function () {
 // video player 
 
 
-$(document).on('click', '.videowall__btn', function () {
-  var $video = $('#videoPlayer'),
-    src = $video.attr('src');
+function playVideo() {
+  const startVideo = document.getElementById('videoPlayer');
+  	function playClip(startVideo) {
+  	startVideo.play();
+    }
+  playClip(startVideo); 
+  hideOverlay = document.getElementById('videoOverlay');
+  hidePlaybtn = document.getElementById('playbtn');
+  hideOverlay.style.display = 'none';
+  hidePlaybtn.style.display = 'none';
+	document.querySelector('#videoPlayer').controls = true;
+}
 
-  $video.attr('src', src + '&autoplay=1');
-});
+playbtn.onclick = playVideo;

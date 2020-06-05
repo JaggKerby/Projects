@@ -478,40 +478,30 @@ li {
 
 .videowall {
     display: flex;
-    position: relative;
-    flex-wrap: wrap;
     justify-content: center;
-}
-
-.videowall::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, .6);
+    align-items: center;
+    flex-flow: column;
+    position: relative;
 }
 
 #videoPlayer {
     width: 100%;
+    outline: none;
+    contain: inherit;
 }
-
-#videoPlayer[poster] {
-    background: url(img/Bitmap.jpg), rgba(0, 0, 0, .6);
-    background-size: 100%;
-    background-clip: padding-box;
-}
-
-.videowall__container {
+#videoOverlay {
     position: absolute;
-    align-self: center;
-    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    top: 0%;
 }
 
 .videowall__btn {
     @include button-reset;
-    position: relative;
+    align-self: center;
+    position: absolute;
     width: 75px;
     height: 75px;
     border-radius: 50%;
