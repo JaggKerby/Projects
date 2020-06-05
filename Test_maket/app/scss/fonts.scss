@@ -4,6 +4,7 @@
         url('../fonts/Dosis-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: auto;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
         url('../fonts/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
         url('../fonts/Dosis-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
+    font-display: auto;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
         url('../fonts/Dosis-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: auto;
 }
 
 @font-face {
@@ -36,6 +40,7 @@
         url('../fonts/Dosis-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
+    font-display: fallback;
 }
 
 
@@ -45,6 +50,7 @@
         url('../fonts/Roboto-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: fallback;
 }
 
 @font-face {
@@ -53,4 +59,5 @@
         url('../fonts/Roboto-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: fallback;
 }
