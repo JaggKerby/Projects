@@ -111,11 +111,67 @@
 
 
 // const number = Number(prompt('Enter a number: '));
-
 // let a = 1;
 // let sum = 0;
 // let countNum = 0;
-
 // for (let i = 1; i <= number; i++) {
-
 // };
+
+
+
+
+// function findDifference(a, b) {
+//     let volumeA = a.reduce(function(sum, current){
+//             return sum * current; 
+//         }, 1);
+//     let volumeB = b.reduce(function(sum, current){
+//             return sum * current; 
+//         }, 1);
+//     if (volumeA > volumeB ) {   
+//         return volumeA - volumeB;
+//     } else {
+//         return volumeB - volumeA;
+//     };
+//   };
+// console.log(findDifference([3, 2, 5], [1, 4, 4]));
+
+
+// let item = {
+//     id: 3434,
+//     storageloc: 'A3',
+//     weight: 12
+// };
+// let itemPrice = Object.assign (
+//     {},
+//     item,
+//     {price: 200}
+// );
+// item.weight = 234;
+// console.log(itemPrice);
+
+
+// let user = {
+//     name: 'John'
+// };
+// user.age = +prompt('Enter a number: ');
+// console.log(user);
+// let newuser = Object.assign (
+//     {},
+//     user,
+//     {role: 'admin'}
+// );
+// console.log(newuser);
+// let {name, age, role} = newuser; 
+// console.log(name, age, role);
+
+
+// const numbers = [10, 29, 39, 49, 43];
+// const userNum = +prompt('Enter a number to find: ');
+// if (numbers.indexOf(userNum) == -1) {
+//     console.log('Not found');
+// } else {
+//     let a = numbers.indexOf(userNum);
+//     console.log(`Число ${numbers[a]} найдено`);
+// };
+
+
