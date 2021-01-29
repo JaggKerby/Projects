@@ -119,7 +119,6 @@
 
 
 
-
 // function findDifference(a, b) {
 //     let volumeA = a.reduce(function(sum, current){
 //             return sum * current; 
@@ -173,5 +172,18 @@
 //     let a = numbers.indexOf(userNum);
 //     console.log(`Число ${numbers[a]} найдено`);
 // };
+
+
+// function pyramid(balls) {
+//     let totalrows = -1;
+//     let row = 0;
+//       while (balls >= row) {
+//         balls = balls - row;
+//         row++;
+//         totalrows = totalrows + 1;
+//       };
+//     return totalrows;
+//   };
+// pyramid(+prompt('Eneter a number: '));
 
 
