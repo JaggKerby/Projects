@@ -187,3 +187,37 @@
 // pyramid(+prompt('Eneter a number: '));
 
 
+// let s1 = +prompt('Enter a scores of 1 exam: ');
+// let s2 = +prompt('Enter a scores of 2 exam: ');
+// let s3 = +prompt('Enter a scores of 3 exam: ');
+// function getGrade (s1, s2, s3) {
+//     let sumScore = (s1 + s2 + s3)/3;
+//     if (sumScore < 60 ) {
+//       return 'F';
+//     }else if(sumScore >= 90 && sumScore <= 100) {
+//       return 'A';
+//     }else if(sumScore >= 80 && sumScore < 90) {
+//       return 'B';
+//     }else if(sumScore >= 70 && sumScore < 80) {
+//       return 'C';
+//     }else{
+//       return 'D';
+//     };
+//   };
+// getGrade (s1, s2, s3);
+
+
+let inputArray = [8, 4, 5];
+
+const gimme = function (inputArray) {
+    let element = inputArray[0];
+    for (let i = 0; i < inputArray.length; i++) {
+        if (element <= inputArray[1] && element <= inputArray[2] ){
+            return console.log(element);
+        } else {
+            element = inputArray[i++];
+        };
+    };
+};
+
+console.log(gimme);
