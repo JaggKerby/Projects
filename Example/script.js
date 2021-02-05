@@ -207,17 +207,16 @@
 // getGrade (s1, s2, s3);
 
 
-let inputArray = [8, 4, 5];
+// let createUserObj = function name(params) {
+    
+// }
 
-const gimme = function (inputArray) {
-    let element = inputArray[0];
-    for (let i = 0; i < inputArray.length; i++) {
-        if (element <= inputArray[1] && element <= inputArray[2] ){
-            return console.log(element);
-        } else {
-            element = inputArray[i++];
-        };
-    };
-};
+// const UserOne = {
+//     name: 'Andrey',
+//     secondName: 'Ivanov',
+//     type: 'Salesman',
+//     rank: 2,
+//     dayOff: null
+// };
 
-console.log(gimme);
+// UserOne.dayOff  = prompt(`Укажи выходные для ${UserOne.name} через запятую`).split(',');
