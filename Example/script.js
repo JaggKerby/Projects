@@ -207,10 +207,6 @@
 // getGrade (s1, s2, s3);
 
 
-// let createUserObj = function name(params) {
-    
-// }
-
 // const UserOne = {
 //     name: 'Andrey',
 //     secondName: 'Ivanov',
@@ -218,5 +214,22 @@
 //     rank: 2,
 //     dayOff: null
 // };
-
 // UserOne.dayOff  = prompt(`Укажи выходные для ${UserOne.name} через запятую`).split(',');
+
+
+// function sumDigits(number) {
+//     let sum = 0;
+//     let arrDigit = number.toString().split('');
+//     console.log(arrDigit);
+//     for (let i = 0; i < arrDigit.length; i++) {
+//         if (arrDigit[i] >= 0)
+//         sum = +sum + +arrDigit[i];
+//     };
+//     return sum;
+//   };
+// sumDigits(-13);
+
+
+function likes(names) {
+
+  }
